@@ -15,6 +15,20 @@
     --background-end-rgb: 0, 0, 0;
   }
 }
+.navbar .container-fluid {
+  display: flex;
+  justify-content: flex-start; /* Alinha os itens à esquerda */
+  gap: 20px; /* Adiciona um espaço de 20px entre os itens */
+}
+
+h1 {
+  text-align: center; /* Centraliza o texto */
+  color: black; /* Define a cor do texto como preto */
+  font-size: 2em; /* Aumenta o tamanho da fonte */
+}
+
+
+
 
 body {
   color: rgb(var(--foreground-rgb));
@@ -30,4 +44,11 @@ body {
   .text-balance {
     text-wrap: balance;
   }
+}
+
+td {
+  padding: 35px; /* Adiciona um espaço de 10px ao redor do conteúdo de cada célula da tabela */
+}
+th {
+  padding: 45px; /* Adiciona um espaço de 10px ao redor do conteúdo de cada célula do cabeçalho da tabela */
 }
