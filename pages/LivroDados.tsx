@@ -1,4 +1,3 @@
-// LivroDados.tsx
 import React, { useState, useEffect } from 'react';
 import '../app/globals.css';
 import { useRouter } from 'next/router';
@@ -52,7 +51,7 @@ const LivroDados: React.FC = () => {
   };
 
   return (
-    <div className={styles.container}>
+    <div className="container">
       <Menu />
       <main>
         <h1>Incluir Livro</h1>

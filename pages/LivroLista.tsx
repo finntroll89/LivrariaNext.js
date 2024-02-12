@@ -1,9 +1,7 @@
-// LivroLista.tsx
 import React, { useState, useEffect } from 'react';
 import styles from '../app/globals.css';
 import { Menu } from '../componentes/Menu';
 import RodaPe from '../componentes/RodaPe';
-
 
 const baseURL = "http://localhost:3000/api/livros";
 
@@ -47,6 +45,7 @@ const LivroLista: React.FC = () => {
             <tr>
               <th>Código</th>
               <th>Título</th>
+              <th>Resumo</th>
               <th>Autor</th>
               <th>Ações</th>
             </tr>
@@ -56,7 +55,8 @@ const LivroLista: React.FC = () => {
               <tr key={livro.codigo}>
                 <td>{livro.codigo}</td>
                 <td>{livro.titulo}</td>
-                <td>{livro.autor}</td>
+                <td>{livro.resumo}</td>
+                <td>{livro.autores.join(', ')}</td>
                 <td>
                   <button onClick={() => excluir(livro.codigo)}>Excluir</button>
                 </td>
